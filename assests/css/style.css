@@ -1,0 +1,341 @@
+
+html{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+
+}
+
+body{
+	font-family: 'Open Sans 400';
+	font-size: 16px;
+	line-height: 1.8;
+	letter-spacing: 1px;
+	font-style: normal;
+}
+
+/*
+==================================
+Basic Setup
+==================================
+*/
+
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+a,
+span,
+label{
+	display: inline-block;
+}
+
+a,
+a:focus{
+	text-decoration: none;
+}
+
+button,
+input,
+textarea,
+button:focus,
+input:focus,
+textarea:focus{
+	outline: 0;
+	border: 0;
+}
+
+button{
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+hr{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+==================================
+Font Size
+==================================
+*/
+
+.font-size-55{
+	font-size: 55px;
+}
+
+.font-size-35{
+	font-size: 35px;
+}
+
+.font-size-27{
+	font-size: 27px;
+}
+
+.font-size-24{
+	font-size: 24px;
+}
+
+.font-size-20{
+	font-size: 20px;
+}
+
+.font-size-18{
+	font-size: 18px;
+}
+
+.font-size-17{
+	font-size: 17px;
+}
+
+.font-size-16{
+	font-size: 16px;
+}
+
+.font-size-15{
+	font-size: 15px;
+}
+
+.font-size-14{
+	font-size: 14px;
+}
+
+.font-size-13{
+	font-size: 13px;
+}
+
+/*
+==================================
+Font Color
+==================================
+*/
+
+.text-color-ff{
+	color: #ffffff;
+}
+
+.text-color-33{
+	color: #333333;
+}
+
+.text-color-73{
+	color: #73b21a;
+}
+
+.text-color-66{
+	color: #666666;
+}
+
+.text-color-7a{
+	color: #7a7a7a;
+}
+
+.text-color-80{
+	color: #808080;
+}
+
+.text-color-97{
+	color: #979797;
+}
+
+/*
+==================================
+Background Color
+==================================
+*/
+
+.bg-color-73{
+	background: #73B21A;
+}
+
+.bg-color-ff{
+	background: #ffffff;
+}
+
+.bg-color-4b{
+	background: #4B7017;
+}
+
+.bg-color-22{
+	background: #222222;
+}
+
+.bg-color-f9{
+	background: #F9F9F9;
+}
+
+.bg-color-0e{
+	background: #0E0E0E;
+}
+
+.bg-color-40{
+	background: #406E00;
+}
+
+.bg-color-8c{
+	background: #8C8C8C;
+}
+
+/*
+==================================
+Reusable Components
+==================================
+*/
+
+.line-1,
+.line-2{
+	opacity: 1;
+	border: 0;
+	border-bottom: 3px solid #73B21A;
+	height: 2px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.line-1{
+	width: 120px;
+	margin-bottom: 5px;
+}
+
+.line-2{
+	width: 75px;
+}
+
+.p-w{
+	max-width: 700px;
+}
+
+.btn-primry{
+	width: 150px;
+	height: 40px;
+	transition: all .3s ease;
+	line-height:40px;
+}
+
+.btn-primry:hover{
+	background: #4b7017;
+}
+
+/*
+==================================
+Reusable Components
+==================================
+*/
+
+
+/*
+==================================
+Start Header Section
+==================================
+*/
+
+.header-top{
+	padding: 8px 0px;
+}
+.main-menu ul li:not(:last-child) a:hover{
+	color: #73B21A;
+}
+
+.main-menu ul li:not(:last-child) a{
+	transition: all .3s ease;
+}
+
+.login-signup li:last-child a{
+	border-radius: 10px;
+}
+
+.main-menu ul li:last-of-type a{
+	height: 35px;
+	width: 35px;
+	line-height: 35px;
+}
+
+/*
+==================================
+End Header Section
+==================================
+*/
+
+
+/*
+==================================
+Start Hero Section
+==================================
+*/
+
+.hero-section {
+    background: linear-gradient(rgba(51, 51, 51, .7),rgba(115, 178, 26, .7)),url(../images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-text a{
+	border-radius: 8px;
+}
+
+.hero-img img {
+    margin-bottom: -1px;
+}
+
+/*
+==================================
+End Hero Section
+==================================
+*/
+
+
+
+/*
+==================================
+Start Garden Section
+==================================
+*/
+
+.garden-row{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.garden-row > *{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.garden-box{
+	trasition:.3s;
+}
+.garden-box:hover{
+	background: #73B21A;
+}
+
+.garden-box a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -17px;
+}
+
+/*
+==================================
+End Garden Section
+==================================
+*/

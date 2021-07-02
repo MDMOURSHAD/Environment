@@ -1,0 +1,82 @@
+
+
+@font-face {
+    font-family: 'Montserrat 400';
+    src: url('Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat 500';
+    src: url('Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat 600';
+    src: url('Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat 700';
+    src: url('Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans 400';
+    src: url('OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans 600';
+    src: url('OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins 400';
+    src: url('Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-m-400{
+    font-family: 'Montserrat 400';
+}
+
+.font-m-500{
+    font-family: 'Montserrat 500';
+}
+
+.font-m-600{
+    font-family: 'Montserrat 600';
+}
+
+.font-m-700{
+    font-family: 'Montserrat 700';
+}
+
+.font-os-600{
+    font-family: 'Open Sans 600';
+}
+
+.font-p-400{
+    font-family: 'Poppins 400';
+}
+
