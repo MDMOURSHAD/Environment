@@ -219,8 +219,8 @@ Reusable Components
 	width: 75px;
 }
 
-.p-w{
-	max-width: 700px;
+.p-w {
+    max-width: 803px;
 }
 
 .btn-primry{
@@ -277,7 +277,7 @@ End Header Section
 
 /*
 ==================================
-Start Hero Section
+Hero Section
 ==================================
 */
 
@@ -298,7 +298,7 @@ Start Hero Section
 
 /*
 ==================================
-End Hero Section
+Hero Section
 ==================================
 */
 
@@ -306,7 +306,7 @@ End Hero Section
 
 /*
 ==================================
-Start Garden Section
+Garden Section
 ==================================
 */
 
@@ -318,10 +318,12 @@ Start Garden Section
 .garden-row > *{
 	padding-left: 15px;
 	padding-right: 15px;
+	margin-bottom: 30px;
 }
 
 .garden-box{
-	trasition:.3s;
+	transition:.3s;
+	min-height: 238px;
 }
 .garden-box:hover{
 	background: #73B21A;
@@ -336,6 +338,130 @@ Start Garden Section
 
 /*
 ==================================
-End Garden Section
+Garden Section
+==================================
+*/
+
+
+/*
+==================================
+Landscaping Section
+==================================
+*/
+
+.lnd-section{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.lnd-row{
+	margin-left: -15px;
+	margin-left: -15px;
+}
+
+.lnd-row > *{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 30px;
+}
+
+.open-video .play-btn {
+    height: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70px;
+    line-height: 70px;
+    position: absolute;
+}
+
+.lnd-content a{
+	transition: all .3s ease;
+}
+
+.lnd-content a:hover{
+	background: #73B21A;
+}
+
+.list-content ul:last-of-type{
+	margin-
+}
+
+.list-content ul li{
+	line-height: 27px;
+}
+
+/*
+==================================
+Landscaping Section
+==================================
+*/
+
+/*
+==================================
+Serivce Section
+==================================
+*/
+
+.service-row{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.service-row > *{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 30px;
+}
+
+.service-box{
+	background: #F9F9F9;
+	transition: all .3s ease;
+}
+
+.service-box:hover{
+	background: #73B21A;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.service-box:hover .service-icon span{
+	background: #ffffff !important;;
+	color: #73B21A !important;;
+}
+
+.service-box:hover .service-desc p{
+	color: #ffffff !important;
+}
+
+.service-box:hover .service-desc hr{
+	border-color: #ffffff !important;
+}
+.service-icon span {
+    justify-content: center;
+    width: 60px;
+    font-size: 20px;
+    height: 60px;
+    transition: all .3s ease;
+}
+
+.service-desc{
+	transition: .3s;
+}
+
+.service-desc hr{
+	opacity: 1;
+	border: 0;
+	border-bottom: 2px dashed #73B21A;
+	background: transparent;
+	margin-top: 6px;
+	margin-bottom: 7px;
+}
+
+
+/*
+==================================
+ Serivice Section
 ==================================
 */
