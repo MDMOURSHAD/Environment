@@ -1,363 +1,860 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="author" content="Md Mourshad">
+		<meta name="description" content="Its a Portfolio website">
+		<meta name="keywords" content="Portfolio Website">
+		<!----- Website Title ----->
+		<title>Environment</title>
+		<!----- Favicon ----->
+		<link rel="shortcut icon" type="image/png" href="assests/images/favicon.png">
+		<!----- Fontawesome ----->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<!---- Fonts ---->
+		<link rel="stylesheet" type="text/css" href="assests/fonts/fonts.css">
+		<!---- Css Here ---->
+		<link rel="stylesheet" type="text/css" href="assests/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assests/css/swiper-bundle.min.css">
+		<link rel="stylesheet" type="text/css" href="assests/css/lity.min.css">
+		<link rel="stylesheet" type="text/css" href="assests/css/style.css">
+		<link rel="stylesheet" type="text/css" href="assests/css/spacing.css">
+		<link rel="stylesheet" type="text/css" href="assests/css/responsive.css">
+	</head>
+	<body>
+		
+		<!--
+		============================================
+		Start Header
+		============================================
+		-->
+		<header class="position-relative">
+			<div class="header-top bg-color-73">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-xl-6 d-none d-md-block">
+							<ul class="text-xl-start text-center">
+								<li class="d-inline-block me-30"><a href="tel:+921 - 48564254" class="text-color-ff font-size-14"><span class="me-05"><i class="fas fa-headphones"></i></span><span>+921 - 48564254</span></a></li>
+								<li class="d-inline-block me-30"><a href="mailto:Demo@gmail.com" class="text-color-ff font-size-14"><span class="me-05"><i class="far fa-envelope"></i></span><span>Demo@gmail. com</span></a></li>
+								<li class="text-color-ff font-size-14 d-inline-block">Mon-Fri : 9:00 - 1700</li>
+							</ul>
+						</div>
+						<div class="col-xl-6 mt-md-3 mt-xl-0">
+							<ul class="login-signup text-center text-xl-end">
+								<li class="d-inline-block me-25">
+									<a href="#" class="font-size-14 text-color-ff text-capitalize">Login</a>
+									<span class="text-color-ff">/</span>
+									<a href="#" class="font-size-14 text-color-ff text-capitalize">Signup</a>
+								</li>
+								<li class="d-inline-block">
+									<a href="#" class="px-10 py-10 bg-color-ff text-color-33 font-size-13">Make an Appointment</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="py-45 header-sticky">
+				<div class="container d-flex justify-content-between">
+					<!-- Logo -->
+					<div class="logo">
+						<a href="index.html"><img src="assests/images/site-logo.png" alt="site-logo"></a>
+					</div>
+					<!---- Main Toggle Btn & Search Box ---->
+					<div class="d-flex align-items-center">
+						<!---- Main Toggle Btn ----->
+						<div class="d-block d-lg-none menu-toggle-btn" onclick="myFunction(this)">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+	  						<div class="bar3"></div>
+						</div>
+						<!---- Search Box ----->
+						<div class="position-relative ms-20 mobile-menu-search d-lg-none">
+							<a href="javascript:void(0);" class="font-m-600 text-color-33 text-uppercase bg-color-73 text-center  rounded-circle open-search-box"><i class="fas fa-search text-color-ff"></i></a>
+							<form action="#" class="search-box py-4 px-3 d-flex align-items-center">
+								<input type="search" name="search" placeholder="Search Here" class="px-10 py-10 w-75">
+								<button type="submit" class="py-10 w-25 bg-color-73 font-m-500 text-color-ff">Search</button>
+							</form>
+						</div>
+					</div>
+					<!-- Main Menu -->
+					<div class="main-menu d-flex align-items-center justify-content-center">
+						<ul class="text-center text-lg-end">
+							<li class="d-lg-inline-block me-40"><a href="#" class="font-m-600 text-color-33 text-uppercase transition-ease">HOME</a></li>
+							<li class="d-lg-inline-block me-40"><a href="#" class="font-m-600 transition-ease text-color-33 text-uppercase">ABOUT</a></li>
+							<li class="d-lg-inline-block me-40"><a href="#" class="font-m-600 transition-ease text-color-33 text-uppercase">SERVICE</a></li>
+							<li class="d-lg-inline-block me-40"><a href="#" class="font-m-600 text-color-33 transition-ease text-uppercase">PRICING</a></li>
+							<li class="d-lg-inline-block me-40"><a href="#" class="font-m-600 text-color-33 transition-ease text-uppercase">SHOP</a></li>
+							<li class="d-lg-inline-block me-40"><a href="#" class="font-m-600 text-color-33 text-uppercase">PAGES</a></li>
+							<li class="d-lg-inline-block me-40"><a href="#" class="font-m-600 text-color-33 transition-ease text-uppercase">BLOCK</a></li>
+							<li class="d-lg-inline-block me-40"><a href="#" class="font-m-600 text-color-33 transition-ease text-uppercase">CONTACT</a></li>
 
-<head>
+							<!---- Search Box ----->
+							<li class="d-none d-lg-inline-block position-relative">
+								<a href="javascript:void(0);" class="font-m-600 text-color-33 text-uppercase bg-color-73 text-center  rounded-circle open-search-box"><i class="fas fa-search text-color-ff"></i></a>
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, intial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="author" content="Md Mourshad">
-	<meta name="description" content="Its a Portfolio website">
-	<meta name="keywords" content="Portfolio Website">
-
-	<!----- Website Title ----->
-	<title>Environment</title>
-
-	<!----- Favicon ----->
-	<link rel="shortcut icon" type="image/png" href="assests/images/favicon.png">
-
-	<!----- Fontawesome ----->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
-	<!---- Fonts ---->
-	<link rel="stylesheet" type="text/css" href="assests/fonts/fonts.css">
-
-	<!---- Css Here ---->
-	<link rel="stylesheet" type="text/css" href="assests/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assests/css/swiper-bundle.min.css">
-	<link rel="stylesheet" type="text/css" href="assests/css/lity.min.css">
-	<link rel="stylesheet" type="text/css" href="assests/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assests/css/spacing.css">
-	<link rel="stylesheet" type="text/css" href="assests/css/responsive.css">
-
-</head>
-
-<body>
- 
- 	<!--
- 	============================================
- 	Start Header 
- 	============================================
- 	-->
-
- 	<header>
- 		<div class="header-top bg-color-73">
- 			<div class="container">
- 				<div class="row align-items-center">
- 					<div class="col-md-6">
- 						<ul>
- 							<li class="d-inline-block me-30"><a href="tel:+921 - 48564254" class="text-color-ff font-size-14"><span class="me-05"><i class="fas fa-headphones"></i></span><span>+921 - 48564254</span></a></li>
- 							<li class="d-inline-block me-30"><a href="mailto:Demo@gmail.com" class="text-color-ff font-size-14"><span class="me-05"><i class="far fa-envelope"></i></span><span>Demo@gmail. com</span></a></li>
- 							<li class="text-color-ff font-size-14 d-inline-block">Mon-Fri : 9:00 - 1700</li>
- 						</ul>
- 					</div>
- 					<div class="col-md-6">
- 						<ul class="login-signup text-end">
- 							<li class="d-inline-block me-25">
- 								<a href="#" class="font-size-14 text-color-ff text-capitalize">Login</a>
- 								<span class="text-color-ff">/</span>
- 								<a href="#" class="font-size-14 text-color-ff text-capitalize">Signup</a>
- 							</li>
- 							<li class="d-inline-block">
- 								<a href="#" class="px-10 py-10 bg-color-ff text-color-33 font-size-13">Make an Appointment</a>
- 							</li>
- 						</ul>
- 					</div>
- 				</div>
- 			</div>
- 		</div>
- 		<nav class="py-45">
- 			<div class="container d-flex justify-content-between">
- 				<div class="logo">
- 					<a href="index.html"><img src="assests/images/site-logo.png" alt="site-logo"></a>
- 				</div>
- 				<!-- Main Menu -->
- 				<div class="main-menu">
- 					<ul>
- 						<li class="d-inline-block me-40"><a href="#" class="font-m-600 text-color-33 text-uppercase">HOME</a></li>
- 						<li class="d-inline-block me-40"><a href="#" class="font-m-600 text-color-33 text-uppercase">ABOUT</a></li>
- 						<li class="d-inline-block me-40"><a href="#" class="font-m-600 text-color-33 text-uppercase">SERVICE</a></li>
- 						<li class="d-inline-block me-40"><a href="#" class="font-m-600 text-color-33 text-uppercase">PRICING</a></li>
- 						<li class="d-inline-block me-40"><a href="#" class="font-m-600 text-color-33 text-uppercase">SHOP</a></li>
- 						<li class="d-inline-block me-40"><a href="#" class="font-m-600 text-color-33 text-uppercase">PAGES</a></li>
- 						<li class="d-inline-block me-40"><a href="#" class="font-m-600 text-color-33 text-uppercase">BLOCK</a></li>
- 						<li class="d-inline-block me-40"><a href="#" class="font-m-600 text-color-33 text-uppercase">CONTACT</a></li>
- 						<li class="d-inline-block"><a href="#" class="font-m-600 text-color-33 text-uppercase bg-color-73 text-center  rounded-circle"><i class="fas fa-search text-color-ff"></i></a></li>
- 					</ul>
- 				</div>
- 			</div>
- 		</nav>
- 	</header>
- 
- 	<!--
- 	============================================
- 	End Header 
- 	============================================
- 	-->
-
-
- 	<main>
- 		
-	 	<!--
-	 	============================================
-	 	Start Hero section 
-	 	============================================
-	 	-->
-
-	 	<section class="hero-section">
-	 		<div class="container">
-	 			<div class="row align-items-center">
-	 				<div class="col-lg-4">
-	 					<div class="hero-img">
-	 						<img src="assests/images/hero.png" alt="hero" class="img-fluid">
-	 					</div>
-	 				</div>
-	 				<div class="col-lg-8">
-	 					<div class="hero-text">
-	 						<h1 class="text-color-ff font-m-700 font-size-55">Takes Practice Superior
-                            Of Excellence</h1>
-                            <p class="text-color-ff font-size-14 mt-30 mb-45">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br> ut labore et dolore magna aliqua. enim ad minim veniam</p>
-                            <a href="#" class="bg-color-ff text-uppercase text-color-73 font-os-600 font-size-14 py-10 px-15">Explor more</a>
-	 					</div>
-	 				</div>
-	 			</div>
-	 		</div>
-	 	</section>
-
-	 	<!--
-	 	============================================
-	 	End Hero section 
-	 	============================================
-	 	-->
-
-	 	<!--
-	 	============================================
-	 	Start Garden section 
-	 	============================================
-	 	-->
-
-	 	<section class="garden-section py-100">
-	 		<div class="container">
-	 			<div class="garden-title text-center mb-50">
-	 				<h2 class="font-size-35 text-color-33 font-m-700 mb-05 fst-italic">Welcome To <span class="text-color-73">Garden</span></h2>
-	 				<hr class="line-1">
-	 				<hr class="line-2">
-	 				<p class="mt-10 font-size-15 text-color-66 p-w mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis</p>
-	 			</div>
-	 			<div class="row garden-row g-0">
-	 				<div class="col-lg-4">
-	 					<div class="garden-box bg-color-4b position-relative text-center py-35 px-15">
-	 						<img src="assests/images/garden1.png" alt="garden1" class="img-fluid">
-	 						<h3 class="font-m-600 font-size-18 text-color-ff text-uppercase mt-10 mb-05">IRRIGATION & DRAINAGE</h3>
-	 						<p class="font-size-14 text-color-ff">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-	 						<a href="#" class=" rounded-pill btn-primry bg-color-73 text-color-ff text-uppercase font-m-500 font-size-15">read more</a>
-	 					</div>
-	 				</div>
-	 				<div class="col-lg-4">
-	 					<div class="garden-box bg-color-4b position-relative text-center py-35 px-15">
-	 						<img src="assests/images/garden2.png" alt="garden1" class="img-fluid">
-	 						<h3 class="font-m-600 font-size-18 text-color-ff text-uppercase mt-10 mb-05">Specialized Company</h3>
-	 						<p class="font-size-14 text-color-ff">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-	 						<a href="#" class=" rounded-pill btn-primry bg-color-73 text-color-ff text-uppercase font-m-500 font-size-15">read more</a>
-	 					</div>
-	 				</div>
-	 				<div class="col-lg-4">
-	 					<div class="garden-box bg-color-4b position-relative text-center py-35 px-15">
-	 						<img src="assests/images/garden3.png" alt="garden1" class="img-fluid">
-	 						<h3 class="font-m-600 font-size-18 text-color-ff text-uppercase mt-10 mb-05">Landscape Management</h3>
-	 						<p class="font-size-14 text-color-ff">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-	 						<a href="#" class="rounded-pill btn-primry bg-color-73 text-color-ff text-uppercase font-m-500 font-size-15">read more</a>
-	 					</div>
-	 				</div>
-	 			</div>
-	 		</div>
-	 	</section>
-
-	 	<!--
-	 	============================================
-	 	End Garder section 
-	 	============================================
-	 	-->
-
-	 	<!--
-	 	============================================
-	 	Start Landscaping section 
-	 	============================================
-	 	-->
-	 	
-	 	<section class="lnd-section py-100">
-	 		<div class="container">
-	 			<div class="row g-0 lnd-row">
-	 				<div class="col-lg-6 d-flex align-items-stretch">
-	 					<div class="open-video position-relative d-flex align-items-stretch">
-	 						<img src="assests/images/play-btn.jpg" alt="play-btn" class="img-fluid">
-	 						<a href="//vimeo.com/1084537" data-lity class="play-btn text-center rounded-circle bg-color-ff font-size-27"><i class="fas fa-play-circle text-color-73"></i></a>
-	 					</div>
-	 				</div>
-	 				<div class="col-lg-6">
-	 					<div class="lnd-content">
-	 						<p class="font-m-600 font-size-20 text-color-ff">SERVICE IN LANDSCAPPING</p>
-	 						<p class="font-size-14 text-color-ff mb-35 mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo incid et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio laboris nis aliquip ex ea commodo consequat. Du inreprehenderit in voluptate velit esse cillum dolor fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
-	 						<div class="d-flex list-content">
-	 							<ul class="me-75 mb-20">
-	 								<li class="d-flex align-items-center">
-	 									<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
-	 									<span class="font-size-14 text-color-ff">Lawn Renovation</span>
-	 								</li>
-	 								<li class="d-flex align-items-center">
-	 									<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
-	 									<span class="font-size-14 text-color-ff">24×7 Emergency Services</span>
-	 								</li>
-	 								<li class="d-flex align-items-center">
-	 									<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
-	 									<span class="font-size-14 text-color-ff">Feel like Home Services</span>
-	 								</li>
-	 							</ul>
-	 							<ul>
-	 								<li class="d-flex align-items-center">
-	 									<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
-	 									<span class="font-size-14 text-color-ff">Natural Stone Walks</span>
-	 								</li>
-	 								<li class="d-flex align-items-center">
-	 									<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
-	 									<span class="font-size-14 text-color-ff">Outdoor Checkup</span>
-	 								</li>
-	 								<li class="d-flex align-items-center">
-	 									<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
-	 									<span class="font-size-14 text-color-ff">Easy and Affordable Billing</span>
-	 								</li>
-	 							</ul>
-	 						</div>
-	 						<a href="#" class="btn-primry text-color-ff bg-color-4b text-center rounded-pill font-m-600 font-size-15 text-uppercase">READ MORE</a>
-	 					</div>
-	 				</div>
-
-	 			</div>
-	 		</div>
-	 	</section>
-	 	<!--
-	 	============================================
-	 	End Landscaping section 
-	 	============================================
-	 	-->
-
-	 	<!--
-	 	============================================
-	 	Start Service section 
-	 	============================================
-	 	-->
-
-	 	<div class="service-section py-100">
-	 		<div class="container">
-	 			<div class="service-title text-center mb-50">
-	 				<h2 class="font-size-35 text-color-33 font-m-700 mb-05 fst-italic">Our Service</h2>
-	 				<hr class="line-1">
-	 				<hr class="line-2">
-	 				<p class="mt-10 font-size-15 text-color-66 p-w mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis</p>
-	 			</div>
-	 			<div class="row service-row">
-	 				<div class="col-lg-4">
-	 					<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
-	 						<div class="service-icon me-15">
-	 							<span class="d-flex align-items-center 
-	 							 justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fas fa-shower font-size-27"></i></span>
-	 						</div>
-	 						<div class="service-desc">
-	 							<p class="font-m-600 font-size-18 text-color-66 text-uppercase">Licensed Bonded</p>
-	 							<hr>
-	 							<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-	 						</div>
-	 					</div>
-	 				</div>
-	 				<div class="col-lg-4">
-	 					<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
-	 						<div class="service-icon me-15">
-	 							<span class="d-flex align-items-center 
-	 							 justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fas fa-shower font-size-27"></i></span>
-	 						</div>
-	 						<div class="service-desc">
-	 							<p class="font-m-600 font-size-18 text-color-66 text-uppercase">EXCELLENT SERVICE</p>
-	 							<hr>
-	 							<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-	 						</div>
-	 					</div>
-	 				</div>
-	 				<div class="col-lg-4">
-	 					<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
-	 						<div class="service-icon me-15">
-	 							<span class="d-flex align-items-center 
-	 							 justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fas fa-shower font-size-27"></i></span>
-	 						</div>
-	 						<div class="service-desc">
-	 							<p class="font-m-600 font-size-18 text-color-66 text-uppercase">Water Gardening</p>
-	 							<hr>
-	 							<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-	 						</div>
-	 					</div>
-	 				</div>
-	 				<div class="col-lg-4">
-	 					<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
-	 						<div class="service-icon me-15">
-	 							<span class="d-flex align-items-center 
-	 							 justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fas fa-shower font-size-27"></i></span>
-	 						</div>
-	 						<div class="service-desc">
-	 							<p class="font-m-600 font-size-18 text-color-66 text-uppercase">Garden Decoration</p>
-	 							<hr>
-	 							<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-	 						</div>
-	 					</div>
-	 				</div>
-	 				<div class="col-lg-4">
-	 					<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
-	 						<div class="service-icon me-15">
-	 							<span class="d-flex align-items-center 
-	 							 justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fas fa-shower font-size-27"></i></span>
-	 						</div>
-	 						<div class="service-desc">
-	 							<p class="font-m-600 font-size-18 text-color-66 text-uppercase">LICENSE & INSURANCE</p>
-	 							<hr>
-	 							<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-	 						</div>
-	 					</div>
-	 				</div>
-	 				<div class="col-lg-4">
-	 					<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
-	 						<div class="service-icon me-15">
-	 							<span class="d-flex align-items-center 
-	 							 justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fas fa-shower font-size-27"></i></span>
-	 						</div>
-	 						<div class="service-desc">
-	 							<p class="font-m-600 font-size-18 text-color-66 text-uppercase">30 Years of Experience</p>
-	 							<hr>
-	 							<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-	 						</div>
-	 					</div>
-	 				</div>
-	 			</div>
-	 		</div>
-	 	</div>
-
-	 	<!--
-	 	============================================
-	 	End Service section 
-	 	============================================
-	 	-->
- 	</main>
-
-
-
-	<!---- Js Here ---->
-	<script src="assests/js/jquery.min.js"></script>
-	<script src="assests/js/bootstrap.min.js"></script>
-	<script src="assests/js/lity.min.js"></script>
-	<script src="assests/js/waypoints.min.js"></script>
-	<script src="assests/js/jquery.counterup.min.js"></script>
-	<script src="assests/js/mixitup.min.js"></script>
-	<script src="assests/js/swiper-bundle.min.js"></script>
-	<script src="assests/js/main.js"></script>
-
+								<form action="#" class="search-box py-4  px-3 d-flex align-items-center">
+									<input type="search" name="search" placeholder="Search Here" class="px-10 py-10 w-75">
+									<button type="submit" class="py-10 w-25 bg-color-73 font-m-500 text-color-ff">Search</button>
+								</form>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<!--
+		============================================
+		End Header
+		============================================
+		-->
+		<main>
+			
+			<!--
+			============================================
+			Start Hero section
+			============================================
+			-->
+			<section class="hero-section">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-4">
+							<div class="hero-img">
+								<img src="assests/images/hero.png" alt="hero" class="img-fluid">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="hero-text">
+								<h1 class="text-color-ff font-m-700 font-size-55">Takes Practice Superior
+								Of Excellence</h1>
+								<p class="text-color-ff font-size-14 mt-30 mb-45">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam</p>
+								<a href="#" class="bg-color-ff text-uppercase text-color-73 font-os-600 font-size-14 py-10 px-15">Explor more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--
+			============================================
+			End Hero section
+			============================================
+			-->
+			<!--
+			============================================
+			Start Garden section
+			============================================
+			-->
+			<section class="garden-section py-100">
+				<div class="container">
+					<div class="garden-title text-center mb-50">
+						<h2 class="font-size-35 text-color-33 font-m-700 mb-05 fst-italic">Welcome To <span class="text-color-73">Garden</span></h2>
+						<hr class="line-1">
+						<hr class="line-2">
+						<p class="mt-10 font-size-15 text-color-66 p-w mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+					</div>
+					<div class="row garden-row g-0">
+						<div class="col-lg-4 col-md-6">
+							<div class="garden-box transition-ease bg-color-4b position-relative text-center py-35 px-15">
+								<img src="assests/images/garden1.png" alt="garden1" class="img-fluid">
+								<h3 class="font-m-600 font-size-18 text-color-ff text-uppercase mt-10 mb-05">IRRIGATION & DRAINAGE</h3>
+								<p class="font-size-14 text-color-ff">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+								<a href="#" class=" rounded-pill btn-primry transition-ease bg-color-73 text-color-ff text-uppercase font-m-500 font-size-15">read more</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="garden-box transition-ease bg-color-4b position-relative text-center py-35 px-15">
+								<img src="assests/images/garden2.png" alt="garden1" class="img-fluid">
+								<h3 class="font-m-600 font-size-18 text-color-ff text-uppercase mt-10 mb-05">Specialized Company</h3>
+								<p class="font-size-14 text-color-ff">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+								<a href="#" class=" rounded-pill btn-primry bg-color-73 text-color-ff text-uppercase font-m-500 font-size-15">read more</a>
+							</div>
+						</div>
+						<div class="col-lg-4 mx-auto col-md-6">
+							<div class="garden-box bg-color-4b transition-ease position-relative text-center py-35 px-15">
+								<img src="assests/images/garden3.png" alt="garden1" class="img-fluid">
+								<h3 class="font-m-600 font-size-18 text-color-ff text-uppercase mt-10 mb-05">Landscape Management</h3>
+								<p class="font-size-14 text-color-ff">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+								<a href="#" class="rounded-pill btn-primry bg-color-73 text-color-ff text-uppercase font-m-500 font-size-15">read more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--
+			============================================
+			End Garder section
+			============================================
+			-->
+			<!--
+			============================================
+			Start Landscaping section
+			============================================
+			-->
+			
+			<section class="lnd-section py-100">
+				<div class="container">
+					<div class="row g-0 lnd-row align-items-center">
+						<div class="col-xl-6 col-lg-5 d-lg-flex">
+							<div class="open-video position-relative d-flex">
+								<img src="assests/images/play-btn.jpg" alt="play-btn" class="img-fluid">
+								<a href="//vimeo.com/1084537" data-lity class="play-btn text-center rounded-circle bg-color-ff font-size-27"><i class="fas fa-play-circle text-color-73"></i></a>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-7">
+							<div class="lnd-content">
+								<p class="font-m-600 font-size-20 text-color-ff">SERVICE IN LANDSCAPPING</p>
+								<p class="font-size-14 text-color-ff mb-35 mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo incid et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio laboris nis aliquip ex ea commodo consequat. Du inreprehenderit in voluptate velit esse cillum dolor fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
+								<div class="d-flex list-content">
+									<ul class="me-75 mb-20">
+										<li class="d-flex align-items-center">
+											<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
+											<span class="font-size-14 text-color-ff">Lawn Renovation</span>
+										</li>
+										<li class="d-flex align-items-center">
+											<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
+											<span class="font-size-14 text-color-ff">24×7 Emergency Services</span>
+										</li>
+										<li class="d-flex align-items-center">
+											<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
+											<span class="font-size-14 text-color-ff">Feel like Home Services</span>
+										</li>
+									</ul>
+									<ul>
+										<li class="d-flex align-items-center">
+											<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
+											<span class="font-size-14 text-color-ff">Natural Stone Walks</span>
+										</li>
+										<li class="d-flex align-items-center">
+											<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
+											<span class="font-size-14 text-color-ff">Outdoor Checkup</span>
+										</li>
+										<li class="d-flex align-items-center">
+											<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
+											<span class="font-size-14 text-color-ff">Easy and Affordable Billing</span>
+										</li>
+									</ul>
+								</div>
+								<a href="#" class="btn-primry text-color-ff bg-color-4b text-center rounded-pill font-m-600 font-size-15 text-uppercase">READ MORE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--
+			============================================
+			End Landscaping section
+			============================================
+			-->
+			<!--
+			============================================
+			Start Service section
+			============================================
+			-->
+			<div class="service-section py-100">
+				<div class="container">
+					<div class="service-title text-center mb-50">
+						<h2 class="font-size-35 text-color-33 font-m-700 mb-05 fst-italic">Our Service</h2>
+						<hr class="line-1">
+						<hr class="line-2">
+						<p class="mt-10 font-size-15 text-color-66 p-w mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+					</div>
+					<div class="row service-row">
+						<div class="col-lg-6 col-xl-4 col-md-6">
+							<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
+								<div class="service-icon me-15">
+									<span class="d-flex align-items-center
+									justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fab fa-pagelines font-size-27"></i></span>
+								</div>
+								<div class="service-desc">
+									<p class="font-m-600 font-size-18 text-color-66 text-uppercase">Licensed Bonded</p>
+									<hr>
+									<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xl-4 col-md-6">
+							<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
+								<div class="service-icon me-15">
+									<span class="d-flex align-items-center
+									justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fas fa-tree font-size-27"></i></span>
+								</div>
+								<div class="service-desc">
+									<p class="font-m-600 font-size-18 text-color-66 text-uppercase">EXCELLENT SERVICE</p>
+									<hr>
+									<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xl-4 col-md-6">
+							<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
+								<div class="service-icon me-15">
+									<span class="d-flex align-items-center
+									justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fab fa-envira font-size-27"></i></span>
+								</div>
+								<div class="service-desc">
+									<p class="font-m-600 font-size-18 text-color-66 text-uppercase">Water Gardening</p>
+									<hr>
+									<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xl-4 col-md-6">
+							<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
+								<div class="service-icon me-15">
+									<span class="d-flex align-items-center
+									justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fas fa-shower font-size-27"></i></span>
+								</div>
+								<div class="service-desc">
+									<p class="font-m-600 font-size-18 text-color-66 text-uppercase">Garden Decoration</p>
+									<hr>
+									<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xl-4 col-md-6">
+							<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
+								<div class="service-icon me-15">
+									<span class="d-flex align-items-center
+									justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fas fa-shower font-size-27"></i></span>
+								</div>
+								<div class="service-desc">
+									<p class="font-m-600 font-size-18 text-color-66 text-uppercase">LICENSE & INSURANCE</p>
+									<hr>
+									<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xl-4 col-md-6">
+							<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
+								<div class="service-icon me-15">
+									<span class="d-flex align-items-center
+									justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fas fa-sign-language font-size-27"></i></span>
+								</div>
+								<div class="service-desc">
+									<p class="font-m-600 font-size-18 text-color-66 text-uppercase">30 Years of Experience</p>
+									<hr>
+									<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--
+			============================================
+			End Service section
+			============================================
+			-->
+			<!--
+			============================================
+			Start Counter Up section
+			============================================
+			-->
+			<section class="counter-section py-100">
+				<div class="container">
+					<div class="row g-4">
+						<div class="col-md-6 col-lg-3">
+							<div class="counter-item text-center">
+								<div class="counter-img rounded-circle d-flex align-items-center justify-content-center mx-auto">
+									<img src="assests/images/counte1.png" alt="counte">
+								</div>
+								<p class="font-m-600 font-size-27 text-color-ff counter">840</p>
+								<p class="font-m-600 font-size-17 text-color-ff text-uppercase">CASES COMPLETED</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<div class="counter-item text-center">
+								<div class="counter-img rounded-circle d-flex align-items-center justify-content-center mx-auto">
+									<img src="assests/images/counte2.png" alt="counte">
+								</div>
+								<p class="font-m-600 font-size-27 text-color-ff counter">2034</p>
+								<p class="font-m-600 font-size-17 text-color-ff text-uppercase">SUCCESS MISSION</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<div class="counter-item text-center">
+								<div class="counter-img rounded-circle d-flex align-items-center justify-content-center mx-auto">
+									<img src="assests/images/counte3.png" alt="counte">
+								</div>
+								<p class="font-m-600 font-size-27 text-color-ff counter">734</p>
+								<p class="font-m-600 font-size-17 text-color-ff text-uppercase">Work Done</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<div class="counter-item text-center">
+								<div class="counter-img mx-auto rounded-circle d-flex align-items-center justify-content-center">
+									<img src="assests/images/counte4.png" alt="counte">
+								</div>
+								<p class="font-m-600 font-size-27 text-color-ff counter">234</p>
+								<p class="font-m-600 font-size-17 text-color-ff text-uppercase">SATISFIED CUSTOMERS</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--
+			============================================
+			End Counter Up section
+			============================================
+			-->
+			<!--
+			============================================
+			Start Meet section
+			============================================
+			-->
+			<section class="meet-section py-100">
+				<div class="container">
+					<div class="meet-title text-center mb-50">
+						<h2 class="font-size-35 text-color-33 font-m-700 mb-05 fst-italic">Meet Our Team</h2>
+						<hr class="line-1">
+						<hr class="line-2">
+						<p class="mt-10 font-size-15 text-color-66 p-w mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+					</div>
+					<div class="row g-4">
+						<div class="col-lg-3">
+							<div class="team-content">
+								<div class="team-img overflow-hidden position-relative">
+									<img src="assests/images/team1.jpg" alt="team" class="img-fluid">
+									<div class="social-link transition-linear bg-color-40">
+										<ul class="text-center">
+											<li class="d-inline-block me-15"><a href="# " class="font-size-14 text-color-ff"><i class="fab fa-facebook-f"></i></a></li>
+											<li class="d-inline-block me-15"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-twitter"></i></a></li>
+											<li class="d-inline-block me-15"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-google-plus-g"></i></a></li>
+											<li class="d-inline-block me-15"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-linkedin-in"></i></a></li>
+											<li class="d-inline-block"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-pinterest-p"></i></a></li>
+										</ul>
+									</div>
+									<div class="overlay transition-linear"></div>
+								</div>
+								<div class="team-name border text-center">
+									<p class="font-size-14 font-m-400  text-color-33 text-uppercase">MR. Maikel</p>
+									<p class="font-size-14 text-capitalize text-color-66">CEO</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="team-content">
+								<div class="team-img overflow-hidden position-relative">
+									<img src="assests/images/team2.jpg" alt="team" class="img-fluid">
+									<div class="social-link transition-linear bg-color-40">
+										<ul class="text-center">
+											<li class="d-inline-block me-15"><a href="# " class="font-size-14 text-color-ff"><i class="fab fa-facebook-f"></i></a></li>
+											<li class="d-inline-block me-15"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-twitter"></i></a></li>
+											<li class="d-inline-block me-15"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-google-plus-g"></i></a></li>
+											<li class="d-inline-block me-15"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-linkedin-in"></i></a></li>
+											<li class="d-inline-block"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-pinterest-p"></i></a></li>
+										</ul>
+									</div>
+									<div class="overlay transition-linear"></div>
+								</div>
+								<div class="team-name border text-center">
+									<p class="font-size-14 font-m-400 text-color-33 text-uppercase">myccale Jonnson</p>
+									<p class="font-size-14 text-capitalize text-color-66">Co-Faunder</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="team-content">
+								<div class="team-img overflow-hidden position-relative">
+									<img src="assests/images/team3.jpg" alt="team" class="img-fluid">
+									<div class="social-link transition-linear bg-color-40">
+										<ul class="text-center">
+											<li class="d-inline-block me-15"><a href="# " class="font-size-14 text-color-ff"><i class="fab fa-facebook-f"></i></a></li>
+											<li class="d-inline-block me-15"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-twitter"></i></a></li>
+											<li class="d-inline-block me-15"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-google-plus-g"></i></a></li>
+											<li class="d-inline-block me-15"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-linkedin-in"></i></a></li>
+											<li class="d-inline-block"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-pinterest-p"></i></a></li>
+										</ul>
+									</div>
+									<div class="overlay transition-linear"></div>
+								</div>
+								<div class="team-name border text-center">
+									<p class="font-size-14 font-m-400 text-color-33 text-uppercase">Pierre Marie</p>
+									<p class="font-size-14 text-capitalize text-color-66">California</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="team-content">
+								<div class="team-img overflow-hidden position-relative">
+									<img src="assests/images/team4.jpg" alt="team" class="img-fluid">
+									<div class="social-link transition-linear bg-color-40">
+										<ul class="text-center">
+											<li class="d-inline-block me-15"><a href="# " class="font-size-14 text-color-ff"><i class="fab fa-facebook-f"></i></a></li>
+											<li class="d-inline-block me-15"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-twitter"></i></a></li>
+											<li class="d-inline-block me-15"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-google-plus-g"></i></a></li>
+											<li class="d-inline-block me-15"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-linkedin-in"></i></a></li>
+											<li class="d-inline-block"><a href="#" class="font-size-14 text-color-ff"><i class="fab fa-pinterest-p"></i></a></li>
+										</ul>
+									</div>
+									<div class="overlay transition-linear"></div>
+								</div>
+								<div class="team-name border text-center">
+									<p class="font-size-14 font-m-400 text-color-33 text-uppercase">Noah Collin</p>
+									<p class="font-size-14 text-capitalize text-color-66">Landscaper</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--
+			============================================
+			End Meet section
+			============================================
+			-->
+			<!--
+			============================================
+			Start Gallery section
+			============================================
+			-->
+			<section class="gallery-section py-100 overflow-hidden">
+				<div class="container">
+					<div class="meet-title text-center mb-50">
+						<h2 class="font-size-35 text-color-33 font-m-700 mb-05 fst-italic">Our Gallery</h2>
+						<hr class="line-1">
+						<hr class="line-2">
+						<p class="mt-10 font-size-15 text-color-66 p-w mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+					</div>
+					<div class="btn-area text-center">
+						<button type="button" class="font-os-600 me-55 bg-transparent font-size-14 text-color-33" data-filter="all">All Cetagories</button>
+						<button type="button" class="font-os-600 me-55 bg-transparent font-size-14 text-color-33" data-filter=".garden-care">Garden Care</button>
+						<button type="button" class="font-os-600 me-55 bg-transparent font-size-14 text-color-33" data-filter=".lawn-care">Lawn Care</button>
+						<button type="button" class="font-os-600 me-55 bg-transparent font-size-14 text-color-33" data-filter=".planting">Planting</button>
+						<button type="button" class="font-os-600 bg-transparent font-size-14 text-color-33" data-filter=".snow-removal">Snow Removal</button>
+					</div>
+					<div class="row g-0 gallery-row gallery-container">
+						<div class="col-lg-6 mix garden-care snow-removal">
+							<div class="gallery-img position-relative">
+								<img src="assests/images/gallery1.jpg" alt="gallery" class="img-fluid">
+								<div class="gallery-overlay transition-linear overlay-2"></div>
+							</div>
+						</div>
+						<div class="col-lg-3 mix lawn-care planting">
+							<div class="gallery-img position-relative">
+								<img src="assests/images/gallery2.jpg" alt="gallery" class="img-fluid">
+								<div class="gallery-overlay transition-linear overlay-2"></div>
+							</div>
+						</div>
+						<div class="col-lg-3 mix garden-care snow-removal">
+							<div class="gallery-img position-relative">
+								<img src="assests/images/gallery3.jpg" alt="gallery" class="img-fluid">
+								<div class="gallery-overlay transition-linear overlay-2"></div>
+							</div>
+						</div>
+						<div class="col-lg-3 mix lawn-care planting snow-removal">
+							<div class="gallery-img position-relative">
+								<img src="assests/images/gallery4.jpg" alt="gallery" class="img-fluid">
+								<div class="gallery-overlay transition-linear overlay-2"></div>
+							</div>
+						</div>
+						<div class="col-lg-3 mix planting">
+							<div class="gallery-img position-relative">
+								<img src="assests/images/gallery5.jpg" alt="gallery" class="img-fluid">
+								<div class="gallery-overlay transition-linear overlay-2"></div>
+							</div>
+						</div>
+						<div class="col-lg-6 mix lawn-care snow-removal">
+							<div class="gallery-img position-relative">
+								<img src="assests/images/gallery6.jpg" alt="gallery" class="img-fluid">
+								<div class="gallery-overlay transition-linear overlay-2"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--
+			============================================
+			End Gallery section
+			============================================
+			-->
+			<!--
+			============================================
+			Start Slider section
+			============================================
+			-->
+			<section class="slider-section py-100">
+				<div class="container">
+					<!-- Swiper -->
+					<div class="swiper-container">
+						<div class="swiper-wrapper pb-70">
+							<div class="swiper-slide">
+								<div class="slider-content text-center">
+									<img src="assests/images/client1.jpg" class="mx-auto rounded-circle" alt="client">
+									<p class="font-m-600 text-color-ff">Jhon Kevin</p>
+									<p class="font-size-16 text-color-ff text-uppercase">CEO</p>
+									<p class="font-size-14 text-color-ff mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore edolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slider-content text-center">
+									<img src="assests/images/client2.jpg" class="mx-auto rounded-circle" alt="client">
+									<p class="font-m-600 text-color-ff">Jhon Kevin</p>
+									<p class="font-size-16 text-color-ff text-uppercase">CEO</p>
+									<p class="font-size-14 text-color-ff mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore edolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="slider-content text-center">
+									<img src="assests/images/client3.jpg" class="mx-auto rounded-circle" alt="client">
+									<p class="font-m-600 text-color-ff">Jhon Kevin</p>
+									<p class="font-size-16 text-color-ff text-uppercase">CEO</p>
+									<p class="font-size-14 text-color-ff mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore edolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+								</div>
+							</div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<!--
+			============================================
+			End Slider section
+			============================================
+			-->
+			<!--
+			============================================
+			End News section
+			============================================
+			-->
+			<section class="news-section py-100">
+				<div class="container">
+					<div class="news-title text-center mb-50">
+						<h2 class="font-size-35 text-color-33 font-m-700 mb-05 fst-italic">Latest News</h2>
+						<hr class="line-1">
+						<hr class="line-2">
+						<p class="mt-10 font-size-15 text-color-66 p-w mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+					</div>
+					<div class="row news-row">
+						<div class="col-lg-4">
+							<div class="news-content transition-ease">
+								<div class="news-img position-relative overflow-hidden">
+									<img src="assests/images/news1.jpg" class="img-fluid" alt="news">
+									<div class="overlay-2 news-overlay transition-linear"></div>
+									<div class="month transition-linear text-center bg-color-73">
+										<p class="font-p-400 font-size-14 text-color-ff">12 November</p>
+									</div>
+								</div>
+								<div class="news-desc pe-15 ps-15">
+									<p class="font-m-600 font-size-20 text-color-33 mt-10">should choose the Gardenhub</p>
+									<p class="font-size-14 text-color-66 mb">Lorem ipsum dolor sit amet, consectr adipisi sed do eiusmod tempor incid</p>
+								</div>
+								<div class="news-link py-05 ps-15 pe-30 border-top d-flex align-items-center justify-content-between">
+									<a href="#" class=" transition-ease font-size-18 text-color-66"><span class="me-10">Read More</span>
+									<span class="news-icon"><i class="fas fa-angle-double-right"></i></span>
+								</a>
+								<p>
+									<span><i class="far fa-comment"></i></span>
+									<span>10</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="news-content transition-ease">
+							<div class="news-img position-relative overflow-hidden">
+								<img src="assests/images/news2.jpg" class="img-fluid" alt="news">
+								<div class="overlay-2 news-overlay transition-linear"></div>
+								<div class="month transition-linear text-center bg-color-73">
+									<p class="font-p-400 font-size-14 text-color-ff">12 November</p>
+								</div>
+							</div>
+							<div class="news-desc pe-15 ps-15">
+								<p class="font-m-600 font-size-20 text-color-33 mt-10">Good Lawn always Adds Value</p>
+								<p class="font-size-14 text-color-66 mb">Lorem ipsum dolor sit amet, consectr adipisi sed do eiusmod tempor incid</p>
+							</div>
+							<div class="news-link py-05 ps-15 pe-30 border-top d-flex align-items-center justify-content-between">
+								<a href="#" class=" transition-ease font-size-18 text-color-66"><span class="me-10">Read More</span>
+								<span class="news-icon"><i class="fas fa-angle-double-right"></i></span>
+							</a>
+							<p>
+								<span><i class="far fa-comment"></i></span>
+								<span>10</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="news-content transition-ease">
+						<div class="news-img position-relative overflow-hidden">
+							<img src="assests/images/news3.jpg" class="img-fluid" alt="news">
+							<div class="overlay-2 news-overlay transition-linear"></div>
+							<div class="month transition-linear text-center bg-color-73">
+								<p class="font-p-400 font-size-14 text-color-ff">12 November</p>
+							</div>
+						</div>
+						<div class="news-desc pe-15 ps-15">
+							<p class="font-m-600 font-size-20 text-color-33 mt-10">Neward our people for taking</p>
+							<p class="font-size-14 text-color-66 mb">Lorem ipsum dolor sit amet, consectr adipisi sed do eiusmod tempor incid</p>
+						</div>
+						<div class="news-link py-05 ps-15 pe-30 border-top d-flex align-items-center justify-content-between">
+							<a href="#" class=" transition-ease font-size-18 text-color-66"><span class="me-10">Read More</span>
+							<span class="news-icon"><i class="fas fa-angle-double-right"></i></span>
+						</a>
+						<p>
+							<span><i class="far fa-comment"></i></span>
+							<span>10</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--
+============================================
+End News section
+============================================
+-->
+</main>
+<!--
+============================================
+Start Footer section
+============================================
+-->
+<footer class="bg-color-15">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4">
+			<div class="footer-content">
+				<img src="assests/images/footer-logo.png" alt="logo" class="img-fluid">
+				<p class="font-size-14 my-30 text-color-dd">Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conse</p>
+				<hr class="mb-25 f-line">
+				<ul class="f-social-link">
+					<li class="d-inline-block me-15"><a href="#" class="text-color-80 transition-ease"><i class="fab fa-facebook-f"></i></a></li>
+					<li class="d-inline-block me-15"><a href="#" class="text-color-80 transition-ease"><i class="fab fa-twitter"></i></a></li>
+					<li class="d-inline-block me-15"><a href="#" class="text-color-80 transition-ease"><i class="fab fa-skype"></i></a></li>
+					<li class="d-inline-block me-15"><a href="#" class="text-color-80 transition-ease"><i class="fas fa-share-alt"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-lg-2">
+			<div class="footer-content">
+				<h3 class="font-m-600 text-capitalize font-size-24 text-color-dd mb-30">Useful Links</h3>
+				<ul class="pages-link">
+					<li class="mb-05"><a href="#" class="font-os-600 font-size-15 text-color-dd text-capitalize transition-linear"><i class="fas fa-circle dote"></i><span class="ms-10">home</span></a></li>
+					<li class="mb-05"><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Service</span></a></li>
+					<li class="mb-05"><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Our Team</span></a></li>
+					<li class="mb-05"><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Project</span></a></li>
+					<li class="mb-05"><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Meet Our Blog</span></a></li>
+					<li><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="footer-content">
+				<h3 class="font-m-600 text-capitalize font-size-24 text-color-dd mb-30">Recent Post</h3>
+				<div class="post-area d-flex align-items-center mb-15">
+					<div class="post-img me-20">
+						<img src="assests/images/post1.jpg" alt="post" class="post-img">
+					</div>
+					<div class="post-text">
+						<p class="font-m-400 font-size-16 text-color-dd">Reward our people
+						for taking</p>
+						<span class="font-m-600 font-size-13 text-color-97">May 14, 2018</span>
+					</div>
+				</div>
+				<div class="post-area d-flex aling-items-center">
+					<div class="post-img me-20">
+						<img src="assests/images/post2.jpg" alt="post" class="post-img">
+					</div>
+					<div class="post-text">
+						<p class="font-m-400 font-size-16 text-color-dd">Reward our people
+						for taking</p>
+						<span class="font-m-600 font-size-13 text-color-97">May 14, 2018</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="footer-content">
+				<h3 class="font-m-600 text-capitalize mb-30 font-size-24 text-color-dd">Recent Post</h3>
+				<div class="time mb-15 d-flex justify-content-between">
+					<p class="font-size-14 text-color-ff time-text">Thursday</p>
+					<p class="font-size-14 text-color-ff time-text">24-Hour Shift</p>
+				</div>
+				<div class="time mb-15 d-flex justify-content-between">
+					<p class="font-size-14 text-color-ff time-text">Thursday</p>
+					<p class="font-size-14 text-color-ff time-text">24-Hour Shift</p>
+				</div>
+				<div class="time d-flex justify-content-between">
+					<p class="font-size-14 text-color-ff time-text">Thursday</p>
+					<p class="font-size-14 text-color-ff time-text">24-Hour Shift</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container mt-85">
+	<hr class="f-line">
+	<div class="row py-35">
+		<div class="col-md-6">
+			<div class="copyright-text">
+				<p class="font-size-14 text-color-dd">Copyright 2019 Al Right Reserved</p>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="f-bottom-page-link">
+				<ul class="text-end">
+					<li class="d-inline-block me-20"><a href="#" class="text-color-dd font-size-14 transition-linear">Home</a></li>
+					<li class="d-inline-block me-20" ><a href="#" class="text-color-dd font-size-14 transition-linear">About</a></li>
+					<li class="d-inline-block me-20"><a href="#" class="text-color-dd font-size-14 transition-linear">Service</a></li>
+					<li class="d-inline-block me-20"><a href="#" class="text-color-dd font-size-14 transition-linear">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--
+============================================
+End Footer section
+============================================
+-->
+<!---- Js Here ---->
+<script src="assests/js/jquery-1.12.4.min.js"></script>
+<script src="assests/js/bootstrap.min.js"></script>
+<script src="assests/js/lity.min.js"></script>
+<script src="assests/js/waypoints.min.js"></script>
+<script src="assests/js/jquery.counterup.min.js"></script>
+<script src="assests/js/mixitup.min.js"></script>
+<script src="assests/js/swiper-bundle.min.js"></script>
+<script src="assests/js/main.js"></script>
+<script>
+			function myFunction(x) {
+	x.classList.toggle("change");
+	}
+	var mixer = mixitup('.gallery-container');;
+	
+	var swiper = new Swiper('.swiper-container', {
+		loop: true,
+		// grabCursor: true,
+		speed: 1000,
+		autoplay: {
+		delay: 4000,
+		disableOnInteraction: false,
+		},
+		pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+		},
+});
+</script>
 </body>
 </html>
