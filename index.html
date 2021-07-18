@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, intial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,22 +19,37 @@
 		<!---- Css Here ---->
 		<link rel="stylesheet" type="text/css" href="assests/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="assests/css/swiper-bundle.min.css">
-		<link rel="stylesheet" type="text/css" href="assests/css/lity.min.css">
+		<link rel="stylesheet" type="text/css" href="assests/css/magnific-popup.min.css">
 		<link rel="stylesheet" type="text/css" href="assests/css/style.css">
 		<link rel="stylesheet" type="text/css" href="assests/css/spacing.css">
 		<link rel="stylesheet" type="text/css" href="assests/css/responsive.css">
+
 	</head>
-	<body>
+	<body onload="loading()">
 		
+		<!--
+		==========================
+		Preloader
+		==========================
+		-->
+		<div class="preloader d-flex align-items-center justify-content-center">
+			<img src="assests/images/ezgif.com-gif-maker.gif" alt="">
+		</div>
+		<!--
+		==========================
+		Preloader
+		==========================
+		-->
+
 		<!--
 		============================================
 		Start Header
 		============================================
 		-->
+
 		<header class="position-relative">
 			<div class="header-top bg-color-73">
-				<div class="container">
-					<div class="row align-items-center">
+				<div class="container d-flex flex-md-column flex-xl-row align-items-center justify-content-center justify-content-xl-between">
 						<div class="col-xl-6 d-none d-md-block">
 							<ul class="text-xl-start text-center">
 								<li class="d-inline-block me-30"><a href="tel:+921 - 48564254" class="text-color-ff font-size-14"><span class="me-05"><i class="fas fa-headphones"></i></span><span>+921 - 48564254</span></a></li>
@@ -58,20 +74,23 @@
 			</div>
 			<nav class="py-45 header-sticky">
 				<div class="container d-flex justify-content-between">
+
 					<!-- Logo -->
 					<div class="logo">
 						<a href="index.html"><img src="assests/images/site-logo.png" alt="site-logo"></a>
 					</div>
 					<!---- Main Toggle Btn & Search Box ---->
 					<div class="d-flex align-items-center">
+
 						<!---- Main Toggle Btn ----->
 						<div class="d-block d-lg-none menu-toggle-btn" onclick="myFunction(this)">
 							<div class="bar1"></div>
 							<div class="bar2"></div>
 	  						<div class="bar3"></div>
 						</div>
+
 						<!---- Search Box ----->
-						<div class="position-relative ms-20 mobile-menu-search d-lg-none">
+						<div class="position-relative ms-10 mobile-menu-search d-lg-none">
 							<a href="javascript:void(0);" class="font-m-600 text-color-33 text-uppercase bg-color-73 text-center  rounded-circle open-search-box"><i class="fas fa-search text-color-ff"></i></a>
 							<form action="#" class="search-box py-4 px-3 d-flex align-items-center">
 								<input type="search" name="search" placeholder="Search Here" class="px-10 py-10 w-75">
@@ -79,6 +98,7 @@
 							</form>
 						</div>
 					</div>
+
 					<!-- Main Menu -->
 					<div class="main-menu d-flex align-items-center justify-content-center">
 						<ul class="text-center text-lg-end">
@@ -111,6 +131,7 @@
 		End Header
 		============================================
 		-->
+
 		<main>
 			
 			<!--
@@ -121,7 +142,7 @@
 			<section class="hero-section">
 				<div class="container">
 					<div class="row align-items-center">
-						<div class="col-md-4">
+						<div class="col-md-4 d-none d-md-block">
 							<div class="hero-img">
 								<img src="assests/images/hero.png" alt="hero" class="img-fluid">
 							</div>
@@ -142,12 +163,13 @@
 			End Hero section
 			============================================
 			-->
+
 			<!--
 			============================================
 			Start Garden section
 			============================================
 			-->
-			<section class="garden-section py-100">
+			<section class="garden-section pt-90 pb-85">
 				<div class="container">
 					<div class="garden-title text-center mb-50">
 						<h2 class="font-size-35 text-color-33 font-m-700 mb-05 fst-italic">Welcome To <span class="text-color-73">Garden</span></h2>
@@ -188,19 +210,20 @@
 			End Garder section
 			============================================
 			-->
+
 			<!--
 			============================================
 			Start Landscaping section
 			============================================
 			-->
 			
-			<section class="lnd-section py-100">
+			<section class="lnd-section pt-100 pb-70">
 				<div class="container">
-					<div class="row g-0 lnd-row align-items-center">
-						<div class="col-xl-6 col-lg-5 d-lg-flex">
-							<div class="open-video position-relative d-flex">
+					<div class="row g-0 lnd-row">
+						<div class="col-xl-6 col-lg-5 d-lg-flex align-items-center">
+							<div class="open-video position-relative">
 								<img src="assests/images/play-btn.jpg" alt="play-btn" class="img-fluid">
-								<a href="//vimeo.com/1084537" data-lity class="play-btn text-center rounded-circle bg-color-ff font-size-27"><i class="fas fa-play-circle text-color-73"></i></a>
+								<a href="https://www.youtube.com/watch?v=XSGBVzeBUbk" class="video play-btn text-center rounded-circle bg-color-ff font-size-27"><i class="fas fa-play-circle text-color-73"></i></a>
 							</div>
 						</div>
 						<div class="col-xl-6 col-lg-7">
@@ -208,16 +231,16 @@
 								<p class="font-m-600 font-size-20 text-color-ff">SERVICE IN LANDSCAPPING</p>
 								<p class="font-size-14 text-color-ff mb-35 mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo incid et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio laboris nis aliquip ex ea commodo consequat. Du inreprehenderit in voluptate velit esse cillum dolor fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
 								<div class="d-flex list-content">
-									<ul class="me-75 mb-20">
-										<li class="d-flex align-items-center">
+									<ul class="me-75">
+										<li class="d-flex">
 											<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
 											<span class="font-size-14 text-color-ff">Lawn Renovation</span>
 										</li>
-										<li class="d-flex align-items-center">
+										<li class="d-flex">
 											<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
 											<span class="font-size-14 text-color-ff">24×7 Emergency Services</span>
 										</li>
-										<li class="d-flex align-items-center">
+										<li class="d-flex">
 											<span class="font-size-20 me-10 text-color-ff"><i class="fas fa-angle-double-right"></i></span>
 											<span class="font-size-14 text-color-ff">Feel like Home Services</span>
 										</li>
@@ -248,12 +271,13 @@
 			End Landscaping section
 			============================================
 			-->
+
 			<!--
 			============================================
 			Start Service section
 			============================================
 			-->
-			<div class="service-section py-100">
+			<div class="service-section pt-95 pb-70">
 				<div class="container">
 					<div class="service-title text-center mb-50">
 						<h2 class="font-size-35 text-color-33 font-m-700 mb-05 fst-italic">Our Service</h2>
@@ -262,78 +286,78 @@
 						<p class="mt-10 font-size-15 text-color-66 p-w mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis</p>
 					</div>
 					<div class="row service-row">
-						<div class="col-lg-6 col-xl-4 col-md-6">
-							<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
+						<div class="col-xl-4 col-sm-6">
+							<div class="service-box d-md-flex py-30 px-15  align-items-center justify-content-center">
 								<div class="service-icon me-15">
-									<span class="d-flex align-items-center
+									<span class="d-flex mx-auto mx-md-0  align-items-center
 									justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fab fa-pagelines font-size-27"></i></span>
 								</div>
-								<div class="service-desc">
+								<div class="service-desc text-center text-md-start">
 									<p class="font-m-600 font-size-18 text-color-66 text-uppercase">Licensed Bonded</p>
 									<hr>
 									<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-xl-4 col-md-6">
-							<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
+						<div class=" col-xl-4 col-sm-6">
+							<div class="service-box d-md-flex py-30 px-15  align-items-center justify-content-center">
 								<div class="service-icon me-15">
-									<span class="d-flex align-items-center
+									<span class="d-flex mx-auto mx-md-0  align-items-center
 									justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fas fa-tree font-size-27"></i></span>
 								</div>
-								<div class="service-desc">
+								<div class="service-desc text-center text-md-start">
 									<p class="font-m-600 font-size-18 text-color-66 text-uppercase">EXCELLENT SERVICE</p>
 									<hr>
 									<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-xl-4 col-md-6">
-							<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
+						<div class=" col-xl-4 col-sm-6">
+							<div class="service-box d-md-flex py-30 px-15  align-items-center justify-content-center">
 								<div class="service-icon me-15">
-									<span class="d-flex align-items-center
+									<span class="d-flex mx-auto mx-md-0 align-items-center
 									justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fab fa-envira font-size-27"></i></span>
 								</div>
-								<div class="service-desc">
+								<div class="service-desc text-center text-md-start">
 									<p class="font-m-600 font-size-18 text-color-66 text-uppercase">Water Gardening</p>
 									<hr>
 									<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-xl-4 col-md-6">
-							<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
+						<div class=" col-xl-4 col-sm-6">
+							<div class="service-box  d-md-flex py-30 px-15  align-items-center justify-content-center">
 								<div class="service-icon me-15">
 									<span class="d-flex align-items-center
-									justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fas fa-shower font-size-27"></i></span>
+									justify-content-center rounded-circle text-color-ff bg-color-73 mx-auto mx-md-0 "><i class="fas fa-shower font-size-27"></i></span>
 								</div>
-								<div class="service-desc">
+								<div class="service-desc text-center text-md-start">
 									<p class="font-m-600 font-size-18 text-color-66 text-uppercase">Garden Decoration</p>
 									<hr>
 									<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-xl-4 col-md-6">
-							<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
+						<div class=" col-xl-4 col-sm-6">
+							<div class="service-box d-md-flex py-30 px-15  align-items-center justify-content-center">
 								<div class="service-icon me-15">
-									<span class="d-flex align-items-center
+									<span class="d-flex mx-auto mx-md-0 align-items-center
 									justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fas fa-shower font-size-27"></i></span>
 								</div>
-								<div class="service-desc">
+								<div class="service-desc text-center text-md-start">
 									<p class="font-m-600 font-size-18 text-color-66 text-uppercase">LICENSE & INSURANCE</p>
 									<hr>
 									<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-xl-4 col-md-6">
-							<div class="service-box d-flex py-30 px-15 d-flex align-items-center justify-content-center">
+						<div class=" col-xl-4 col-sm-6">
+							<div class="service-box d-md-flex py-30 px-15  align-items-center justify-content-center">
 								<div class="service-icon me-15">
-									<span class="d-flex align-items-center
+									<span class="d-flex mx-auto mx-md-0 align-items-center
 									justify-content-center rounded-circle text-color-ff bg-color-73"><i class="fas fa-sign-language font-size-27"></i></span>
 								</div>
-								<div class="service-desc">
+								<div class="service-desc text-center text-md-start">
 									<p class="font-m-600 font-size-18 text-color-66 text-uppercase">30 Years of Experience</p>
 									<hr>
 									<p class="font-size-14 text-color-66">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
@@ -348,15 +372,16 @@
 			End Service section
 			============================================
 			-->
+
 			<!--
 			============================================
 			Start Counter Up section
 			============================================
 			-->
-			<section class="counter-section py-100">
+			<section class="counter-section pt-100 pb-90">
 				<div class="container">
 					<div class="row g-4">
-						<div class="col-md-6 col-lg-3">
+						<div class="col-sm-6 col-lg-3">
 							<div class="counter-item text-center">
 								<div class="counter-img rounded-circle d-flex align-items-center justify-content-center mx-auto">
 									<img src="assests/images/counte1.png" alt="counte">
@@ -365,7 +390,7 @@
 								<p class="font-m-600 font-size-17 text-color-ff text-uppercase">CASES COMPLETED</p>
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-3">
+						<div class="col-sm-6 col-lg-3">
 							<div class="counter-item text-center">
 								<div class="counter-img rounded-circle d-flex align-items-center justify-content-center mx-auto">
 									<img src="assests/images/counte2.png" alt="counte">
@@ -374,7 +399,7 @@
 								<p class="font-m-600 font-size-17 text-color-ff text-uppercase">SUCCESS MISSION</p>
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-3">
+						<div class="col-sm-6 col-lg-3">
 							<div class="counter-item text-center">
 								<div class="counter-img rounded-circle d-flex align-items-center justify-content-center mx-auto">
 									<img src="assests/images/counte3.png" alt="counte">
@@ -383,7 +408,7 @@
 								<p class="font-m-600 font-size-17 text-color-ff text-uppercase">Work Done</p>
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-3">
+						<div class="col-sm-6 col-lg-3">
 							<div class="counter-item text-center">
 								<div class="counter-img mx-auto rounded-circle d-flex align-items-center justify-content-center">
 									<img src="assests/images/counte4.png" alt="counte">
@@ -400,12 +425,13 @@
 			End Counter Up section
 			============================================
 			-->
+
 			<!--
 			============================================
 			Start Meet section
 			============================================
 			-->
-			<section class="meet-section py-100">
+			<section class="meet-section pt-90 pb-100">
 				<div class="container">
 					<div class="meet-title text-center mb-50">
 						<h2 class="font-size-35 text-color-33 font-m-700 mb-05 fst-italic">Meet Our Team</h2>
@@ -414,7 +440,7 @@
 						<p class="mt-10 font-size-15 text-color-66 p-w mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis</p>
 					</div>
 					<div class="row g-4">
-						<div class="col-lg-3">
+						<div class="col-lg-3 col-sm-6">
 							<div class="team-content">
 								<div class="team-img overflow-hidden position-relative">
 									<img src="assests/images/team1.jpg" alt="team" class="img-fluid">
@@ -435,7 +461,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3">
+						<div class="col-lg-3 col-sm-6">
 							<div class="team-content">
 								<div class="team-img overflow-hidden position-relative">
 									<img src="assests/images/team2.jpg" alt="team" class="img-fluid">
@@ -456,7 +482,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3">
+						<div class="col-lg-3 col-sm-6">
 							<div class="team-content">
 								<div class="team-img overflow-hidden position-relative">
 									<img src="assests/images/team3.jpg" alt="team" class="img-fluid">
@@ -477,7 +503,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3">
+						<div class="col-lg-3 col-sm-6">
 							<div class="team-content">
 								<div class="team-img overflow-hidden position-relative">
 									<img src="assests/images/team4.jpg" alt="team" class="img-fluid">
@@ -506,12 +532,13 @@
 			End Meet section
 			============================================
 			-->
+
 			<!--
 			============================================
 			Start Gallery section
 			============================================
 			-->
-			<section class="gallery-section py-100 overflow-hidden">
+			<section class="gallery-section pt-90 pb-70 overflow-hidden">
 				<div class="container">
 					<div class="meet-title text-center mb-50">
 						<h2 class="font-size-35 text-color-33 font-m-700 mb-05 fst-italic">Our Gallery</h2>
@@ -527,37 +554,37 @@
 						<button type="button" class="font-os-600 bg-transparent font-size-14 text-color-33" data-filter=".snow-removal">Snow Removal</button>
 					</div>
 					<div class="row g-0 gallery-row gallery-container">
-						<div class="col-lg-6 mix garden-care snow-removal">
+						<div class="col-md-6 mix garden-care snow-removal">
 							<div class="gallery-img position-relative">
 								<img src="assests/images/gallery1.jpg" alt="gallery" class="img-fluid">
 								<div class="gallery-overlay transition-linear overlay-2"></div>
 							</div>
 						</div>
-						<div class="col-lg-3 mix lawn-care planting">
+						<div class="col-md-3 mix lawn-care planting">
 							<div class="gallery-img position-relative">
 								<img src="assests/images/gallery2.jpg" alt="gallery" class="img-fluid">
 								<div class="gallery-overlay transition-linear overlay-2"></div>
 							</div>
 						</div>
-						<div class="col-lg-3 mix garden-care snow-removal">
+						<div class="col-md-3 mix garden-care snow-removal">
 							<div class="gallery-img position-relative">
 								<img src="assests/images/gallery3.jpg" alt="gallery" class="img-fluid">
 								<div class="gallery-overlay transition-linear overlay-2"></div>
 							</div>
 						</div>
-						<div class="col-lg-3 mix lawn-care planting snow-removal">
+						<div class="col-md-3 mix lawn-care planting snow-removal">
 							<div class="gallery-img position-relative">
 								<img src="assests/images/gallery4.jpg" alt="gallery" class="img-fluid">
 								<div class="gallery-overlay transition-linear overlay-2"></div>
 							</div>
 						</div>
-						<div class="col-lg-3 mix planting">
+						<div class="col-md-3 mix planting">
 							<div class="gallery-img position-relative">
 								<img src="assests/images/gallery5.jpg" alt="gallery" class="img-fluid">
 								<div class="gallery-overlay transition-linear overlay-2"></div>
 							</div>
 						</div>
-						<div class="col-lg-6 mix lawn-care snow-removal">
+						<div class="col-md-6 mix lawn-care snow-removal">
 							<div class="gallery-img position-relative">
 								<img src="assests/images/gallery6.jpg" alt="gallery" class="img-fluid">
 								<div class="gallery-overlay transition-linear overlay-2"></div>
@@ -571,12 +598,13 @@
 			End Gallery section
 			============================================
 			-->
+
 			<!--
 			============================================
 			Start Slider section
 			============================================
 			-->
-			<section class="slider-section py-100">
+			<section class="slider-section pt-100 pb-90">
 				<div class="container">
 					<!-- Swiper -->
 					<div class="swiper-container">
@@ -616,12 +644,13 @@
 			End Slider section
 			============================================
 			-->
+
 			<!--
 			============================================
-			End News section
+			Start News section
 			============================================
 			-->
-			<section class="news-section py-100">
+			<section class="news-section pt-90 pb-70">
 				<div class="container">
 					<div class="news-title text-center mb-50">
 						<h2 class="font-size-35 text-color-33 font-m-700 mb-05 fst-italic">Latest News</h2>
@@ -630,7 +659,7 @@
 						<p class="mt-10 font-size-15 text-color-66 p-w mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis</p>
 					</div>
 					<div class="row news-row">
-						<div class="col-lg-4">
+						<div class="col-sm-6 col-lg-4">
 							<div class="news-content transition-ease">
 								<div class="news-img position-relative overflow-hidden">
 									<img src="assests/images/news1.jpg" class="img-fluid" alt="news">
@@ -643,7 +672,7 @@
 									<p class="font-m-600 font-size-20 text-color-33 mt-10">should choose the Gardenhub</p>
 									<p class="font-size-14 text-color-66 mb">Lorem ipsum dolor sit amet, consectr adipisi sed do eiusmod tempor incid</p>
 								</div>
-								<div class="news-link py-05 ps-15 pe-30 border-top d-flex align-items-center justify-content-between">
+								<div class="news-link py-10 ps-15 pe-30 border-top d-flex align-items-center justify-content-between">
 									<a href="#" class=" transition-ease font-size-18 text-color-66"><span class="me-10">Read More</span>
 									<span class="news-icon"><i class="fas fa-angle-double-right"></i></span>
 								</a>
@@ -654,7 +683,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-sm-6 col-lg-4">
 						<div class="news-content transition-ease">
 							<div class="news-img position-relative overflow-hidden">
 								<img src="assests/images/news2.jpg" class="img-fluid" alt="news">
@@ -667,7 +696,7 @@
 								<p class="font-m-600 font-size-20 text-color-33 mt-10">Good Lawn always Adds Value</p>
 								<p class="font-size-14 text-color-66 mb">Lorem ipsum dolor sit amet, consectr adipisi sed do eiusmod tempor incid</p>
 							</div>
-							<div class="news-link py-05 ps-15 pe-30 border-top d-flex align-items-center justify-content-between">
+							<div class="news-link py-10 ps-15 pe-30 border-top d-flex align-items-center justify-content-between">
 								<a href="#" class=" transition-ease font-size-18 text-color-66"><span class="me-10">Read More</span>
 								<span class="news-icon"><i class="fas fa-angle-double-right"></i></span>
 							</a>
@@ -678,7 +707,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-sm-6 col-lg-4 mx-auto">
 					<div class="news-content transition-ease">
 						<div class="news-img position-relative overflow-hidden">
 							<img src="assests/images/news3.jpg" class="img-fluid" alt="news">
@@ -691,170 +720,209 @@
 							<p class="font-m-600 font-size-20 text-color-33 mt-10">Neward our people for taking</p>
 							<p class="font-size-14 text-color-66 mb">Lorem ipsum dolor sit amet, consectr adipisi sed do eiusmod tempor incid</p>
 						</div>
-						<div class="news-link py-05 ps-15 pe-30 border-top d-flex align-items-center justify-content-between">
-							<a href="#" class=" transition-ease font-size-18 text-color-66"><span class="me-10">Read More</span>
-							<span class="news-icon"><i class="fas fa-angle-double-right"></i></span>
-						</a>
-						<p>
-							<span><i class="far fa-comment"></i></span>
-							<span>10</span>
-						</p>
+								<div class="news-link py-10 ps-15 pe-30 border-top d-flex align-items-center justify-content-between">
+									<a href="#" class=" transition-ease font-size-18 text-color-66"><span class="me-10">Read More</span>
+									<span class="news-icon"><i class="fas fa-angle-double-right"></i></span>
+									</a>
+									<p>
+										<span><i class="far fa-comment"></i></span>
+										<span>10</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--
+			============================================
+			End News section
+			============================================
+			-->
+
+			</main>
+		<!--
+		============================================
+		Start Footer section
+		============================================
+		-->
+		<footer class="bg-color-15">
+		<div class="container">
+			<div class="row g-4">
+				<div class="col-lg-4 col-sm-7">
+					<div class="footer-content">
+						<img src="assests/images/footer-logo.png" alt="logo" class="img-fluid">
+						<p class="font-size-14 my-30 text-color-dd">Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conse</p>
+						<hr class="mb-25 f-line">
+						<ul class="f-social-link">
+							<li class="d-inline-block me-15"><a href="#" class="text-color-80 transition-ease"><i class="fab fa-facebook-f"></i></a></li>
+							<li class="d-inline-block me-15"><a href="#" class="text-color-80 transition-ease"><i class="fab fa-twitter"></i></a></li>
+							<li class="d-inline-block me-15"><a href="#" class="text-color-80 transition-ease"><i class="fab fa-skype"></i></a></li>
+							<li class="d-inline-block me-15"><a href="#" class="text-color-80 transition-ease"><i class="fas fa-share-alt"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-sm-5">
+					<div class="footer-content useful-links">
+						<h3 class="font-m-600 text-capitalize font-size-24 text-color-dd mb-30">Useful Links</h3>
+						<ul class="pages-link">
+							<li class="mb-05"><a href="#" class="font-os-600 font-size-15 text-color-dd text-capitalize transition-linear"><i class="fas fa-circle dote"></i><span class="ms-10">home</span></a></li>
+							<li class="mb-05"><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Service</span></a></li>
+							<li class="mb-05"><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Our Team</span></a></li>
+							<li class="mb-05"><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Project</span></a></li>
+							<li class="mb-05"><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Meet Our Blog</span></a></li>
+							<li><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Contact</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-7">
+					<div class="footer-content">
+						<h3 class="font-m-600 text-capitalize font-size-24 text-color-dd mb-30">Recent Post</h3>
+						<div class="post-area d-flex align-items-center mb-15">
+							<div class="post-img me-20">
+								<img src="assests/images/post1.jpg" alt="post" class="post-img">
+							</div>
+							<div class="post-text">
+								<p class="font-m-400 font-size-16 text-color-dd">Reward our people
+								for taking</p>
+								<span class="font-m-600 font-size-13 text-color-97">May 14, 2018</span>
+							</div>
+						</div>
+						<div class="post-area d-flex align-items-center">
+							<div class="post-img me-20">
+								<img src="assests/images/post2.jpg" alt="post" class="post-img">
+							</div>
+							<div class="post-text">
+								<p class="font-m-400 font-size-16 text-color-dd">Reward our people
+								for taking</p>
+								<span class="font-m-600 font-size-13 text-color-97">May 14, 2018</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-5">
+					<div class="footer-content">
+						<h3 class="font-m-600 text-capitalize mb-30 font-size-24 text-color-dd">Recent Post</h3>
+						<div class="time mb-15 d-flex justify-content-between">
+							<p class="font-size-14 text-color-ff time-text">Thursday</p>
+							<p class="font-size-14 text-color-ff time-text">24-Hour Shift</p>
+						</div>
+						<div class="time mb-15 d-flex justify-content-between">
+							<p class="font-size-14 text-color-ff time-text">Thursday</p>
+							<p class="font-size-14 text-color-ff time-text">24-Hour Shift</p>
+						</div>
+						<div class="time d-flex justify-content-between">
+							<p class="font-size-14 text-color-ff time-text">Thursday</p>
+							<p class="font-size-14 text-color-ff time-text">24-Hour Shift</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--
-============================================
-End News section
-============================================
--->
-</main>
-<!--
-============================================
-Start Footer section
-============================================
--->
-<footer class="bg-color-15">
-<div class="container">
-	<div class="row">
-		<div class="col-lg-4">
-			<div class="footer-content">
-				<img src="assests/images/footer-logo.png" alt="logo" class="img-fluid">
-				<p class="font-size-14 my-30 text-color-dd">Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conse</p>
-				<hr class="mb-25 f-line">
-				<ul class="f-social-link">
-					<li class="d-inline-block me-15"><a href="#" class="text-color-80 transition-ease"><i class="fab fa-facebook-f"></i></a></li>
-					<li class="d-inline-block me-15"><a href="#" class="text-color-80 transition-ease"><i class="fab fa-twitter"></i></a></li>
-					<li class="d-inline-block me-15"><a href="#" class="text-color-80 transition-ease"><i class="fab fa-skype"></i></a></li>
-					<li class="d-inline-block me-15"><a href="#" class="text-color-80 transition-ease"><i class="fas fa-share-alt"></i></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-lg-2">
-			<div class="footer-content">
-				<h3 class="font-m-600 text-capitalize font-size-24 text-color-dd mb-30">Useful Links</h3>
-				<ul class="pages-link">
-					<li class="mb-05"><a href="#" class="font-os-600 font-size-15 text-color-dd text-capitalize transition-linear"><i class="fas fa-circle dote"></i><span class="ms-10">home</span></a></li>
-					<li class="mb-05"><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Service</span></a></li>
-					<li class="mb-05"><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Our Team</span></a></li>
-					<li class="mb-05"><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Project</span></a></li>
-					<li class="mb-05"><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Meet Our Blog</span></a></li>
-					<li><a href="#" class="transition-linear font-os-600 font-size-15 text-color-dd text-capitalize"><i class="fas fa-circle dote"></i><span class="ms-10">Contact</span></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-lg-3">
-			<div class="footer-content">
-				<h3 class="font-m-600 text-capitalize font-size-24 text-color-dd mb-30">Recent Post</h3>
-				<div class="post-area d-flex align-items-center mb-15">
-					<div class="post-img me-20">
-						<img src="assests/images/post1.jpg" alt="post" class="post-img">
-					</div>
-					<div class="post-text">
-						<p class="font-m-400 font-size-16 text-color-dd">Reward our people
-						for taking</p>
-						<span class="font-m-600 font-size-13 text-color-97">May 14, 2018</span>
+		<div class="container mt-85">
+			<hr class="f-line">
+			<div class="row py-35">
+				<div class="col-md-6">
+					<div class="copyright-text text-center text-md-start">
+						<p class="font-size-14 text-color-dd">Copyright 2019 Al Right Reserved</p>
 					</div>
 				</div>
-				<div class="post-area d-flex aling-items-center">
-					<div class="post-img me-20">
-						<img src="assests/images/post2.jpg" alt="post" class="post-img">
-					</div>
-					<div class="post-text">
-						<p class="font-m-400 font-size-16 text-color-dd">Reward our people
-						for taking</p>
-						<span class="font-m-600 font-size-13 text-color-97">May 14, 2018</span>
+				<div class="col-md-6">
+					<div class="f-bottom-page-link">
+						<ul class="text-center text-md-end">
+							<li class="d-inline-block me-20"><a href="#" class="text-color-dd font-size-14 transition-linear">Home</a></li>
+							<li class="d-inline-block me-20" ><a href="#" class="text-color-dd font-size-14 transition-linear">About</a></li>
+							<li class="d-inline-block me-20"><a href="#" class="text-color-dd font-size-14 transition-linear">Service</a></li>
+							<li class="d-inline-block me-20"><a href="#" class="text-color-dd font-size-14 transition-linear">Contact</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-3">
-			<div class="footer-content">
-				<h3 class="font-m-600 text-capitalize mb-30 font-size-24 text-color-dd">Recent Post</h3>
-				<div class="time mb-15 d-flex justify-content-between">
-					<p class="font-size-14 text-color-ff time-text">Thursday</p>
-					<p class="font-size-14 text-color-ff time-text">24-Hour Shift</p>
-				</div>
-				<div class="time mb-15 d-flex justify-content-between">
-					<p class="font-size-14 text-color-ff time-text">Thursday</p>
-					<p class="font-size-14 text-color-ff time-text">24-Hour Shift</p>
-				</div>
-				<div class="time d-flex justify-content-between">
-					<p class="font-size-14 text-color-ff time-text">Thursday</p>
-					<p class="font-size-14 text-color-ff time-text">24-Hour Shift</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="container mt-85">
-	<hr class="f-line">
-	<div class="row py-35">
-		<div class="col-md-6">
-			<div class="copyright-text">
-				<p class="font-size-14 text-color-dd">Copyright 2019 Al Right Reserved</p>
-			</div>
-		</div>
-		<div class="col-md-6">
-			<div class="f-bottom-page-link">
-				<ul class="text-end">
-					<li class="d-inline-block me-20"><a href="#" class="text-color-dd font-size-14 transition-linear">Home</a></li>
-					<li class="d-inline-block me-20" ><a href="#" class="text-color-dd font-size-14 transition-linear">About</a></li>
-					<li class="d-inline-block me-20"><a href="#" class="text-color-dd font-size-14 transition-linear">Service</a></li>
-					<li class="d-inline-block me-20"><a href="#" class="text-color-dd font-size-14 transition-linear">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-</footer>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<!--
-============================================
-End Footer section
-============================================
--->
-<!---- Js Here ---->
-<script src="assests/js/jquery-1.12.4.min.js"></script>
-<script src="assests/js/bootstrap.min.js"></script>
-<script src="assests/js/lity.min.js"></script>
-<script src="assests/js/waypoints.min.js"></script>
-<script src="assests/js/jquery.counterup.min.js"></script>
-<script src="assests/js/mixitup.min.js"></script>
-<script src="assests/js/swiper-bundle.min.js"></script>
-<script src="assests/js/main.js"></script>
-<script>
-			function myFunction(x) {
-	x.classList.toggle("change");
-	}
-	var mixer = mixitup('.gallery-container');;
-	
-	var swiper = new Swiper('.swiper-container', {
-		loop: true,
-		// grabCursor: true,
-		speed: 1000,
-		autoplay: {
-		delay: 4000,
-		disableOnInteraction: false,
-		},
-		pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-		},
-});
-</script>
+		</footer>
+		<!--
+		============================================
+		End Footer section
+		============================================
+		-->
+
+		<!--
+		==========================
+		Scroll to Top
+		==========================
+		-->
+		<button onclick="topFunction()" id="myBtn" class="font-size-18 text-color-ff rounded bg-color-73" title="Go to top">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+		<!--
+		==========================
+		Scroll to Top
+		==========================
+		-->
+
+		<!---- Js Here ---->
+		<script src="assests/js/jquery-1.12.4.min.js"></script>
+		<script src="assests/js/bootstrap.min.js"></script>
+		<script src="assests/js/jquery.magnific-popup.min.js"></script>
+		<script src="assests/js/waypoints.min.js"></script>
+		<script src="assests/js/jquery.counterup.min.js"></script>
+		<script src="assests/js/mixitup.min.js"></script>
+		<script src="assests/js/swiper-bundle.min.js"></script>
+		<script src="assests/js/main.js"></script>
+		<script>
+
+		/*-- Preloader  -- */
+		function loading(){
+
+		  var loading = document.getElementsByClassName('preloader');
+
+		  loading[0].style.setProperty("display", "none", "important");
+
+		}
+
+		/*-- Menu Btn  -- */
+				function myFunction(x) {
+		x.classList.toggle("change");
+		}
+
+		/*-- Gallery Mixitup -- */
+		var mixer = mixitup('.gallery-container');;
+
+		/*-- Slider -- */
+		var swiper = new Swiper('.swiper-container', {
+			loop: true,
+			// grabCursor: true,
+			speed: 1000,
+			autoplay: {
+			delay: 4000,
+			disableOnInteraction: false,
+			},
+			pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+			},
+		});
+
+		/*-- Get the button --*/
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+
+	</script>
 </body>
 </html>
